@@ -1,0 +1,22 @@
+---
+
+- name: 2.Installer DotDeb repo pour Debian.
+
+  apt_repository: repo="{{ item }}"
+
+  with_items: "{{ dotdeb_sources }}"
+
+  register: dotdeb_apt_repo_result
+  
+  when: ansible_distribution_release == "Debian"
+
+
+- name: 2.Installer DotDeb repo pour Ubuntu.
+
+  apt_repository: repo="{{ item }}"
+
+  with_items: "{{ dotdeb_sources_ubuntu }}"
+
+  register: dotdeb_apt_repo_result
+ 
+  when: ansible_distribution == 'Ubuntu'

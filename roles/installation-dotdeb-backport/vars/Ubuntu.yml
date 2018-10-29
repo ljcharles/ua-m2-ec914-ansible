@@ -1,0 +1,6 @@
+---
+# vars file for installation-dotdeb-backport
+
+backports_url: http://archive.ubuntu.com/ubuntu
+
+backports_sources: "{{backports_distribution}}-backports main restricted universe multiverse"

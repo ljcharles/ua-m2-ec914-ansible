@@ -1,0 +1,7 @@
+---
+
+- name: 1.Importer DotDeb GPG key.
+
+  apt_key: url="{{ dotdeb_repo_gpg_key_url }}"
+
+  register: dotdeb_apt_key_result

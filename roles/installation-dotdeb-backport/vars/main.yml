@@ -1,0 +1,4 @@
+---
+# vars file for installation-dotdeb-backport
+
+backports_distribution: "{{ansible_distribution_release}}"

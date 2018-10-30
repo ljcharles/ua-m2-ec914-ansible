@@ -1,6 +1,6 @@
 ---
 
-- name: 4.Installer Backports repo pour Debian et Ubuntu.
+- name: 4.Installer Backports repo pour Debian et/ou Ubuntu.
 
   apt_repository: repo="deb {{ backports_url }} {{ backports_sources }}"
 

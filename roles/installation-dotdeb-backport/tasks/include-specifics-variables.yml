@@ -1,6 +1,6 @@
 ---
 
-- name: 3.Ajout des variables spécifiques pour Ubuntu ou Debian.
+- name: 3.Ajout des variables spécifiques pour Debian et/ou Ubuntu.
 
   include_vars: "{{ ansible_distribution }}.yml"
 

@@ -1,12 +1,13 @@
 ---
 # defaults file for installation-dotdeb-backport
-dotdeb_sources:
+
+dotdeb_sources_Debian:
 
   - "deb http://packages.dotdeb.org {{ ansible_distribution_release }} all"
 
   - "deb-src http://packages.dotdeb.org {{ ansible_distribution_release }} all"
 
-dotdeb_sources_ubuntu:
+dotdeb_sources_Ubuntu:
 
   - "deb http://packages.dotdeb.org stable all"
 

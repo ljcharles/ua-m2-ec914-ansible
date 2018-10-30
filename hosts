@@ -1,4 +1,4 @@
 [groupeMachine1]
-192.168.0.23      ansible_connection=ssh        ansible_user=freshloic       ansible_become_method=su
-192.168.0.25      ansible_connection=ssh        ansible_user=freshloic       ansible_become_method=sudo
+192.168.0.26      ansible_connection=ssh        ansible_user=freshloic       ansible_become_method=su
+192.168.0.23      ansible_connection=ssh        ansible_user=freshloic       ansible_become_method=sudo
 

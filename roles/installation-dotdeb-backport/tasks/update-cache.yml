@@ -1,8 +1,6 @@
 ---
 
 - name: 5.Mise à jour du cache apt si un repo ou une clé a été ajouté.
-
-  apt: update_cache=yes
-
-  when: dotdeb_apt_repo_result.changed or dotdeb_apt_key_result.changed or backports_apt_repo_result.changed
+  apt: 
+    update_cache="{{ 'yes' if dotdeb_apt_repo_result.changed or dotdeb_apt_key_result.changed or backports_apt_repo_result.changed else 'no' }}"
 

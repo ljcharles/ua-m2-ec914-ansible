@@ -40,7 +40,7 @@ Dans vars/Debian.yml :
 - paquets_jessie_or_newers: paquets spécifique pour cette version de Debian
 - paquets_wheezy_or_olders: paquets spécifique pour cette version de Debian
 
-Example Playbook
+Exemple Playbook
 ----------------
 
     - hosts: all
@@ -48,11 +48,11 @@ Example Playbook
          - role: installation-dotdeb-backport
          - role: installation-docker
 
-License
+Licence
 -------
 GNU
 
-Author Information
+Auteur Information
 ------------------
 
 Loïc JEAN-CHARLES, Etudiant M2 informatique, Université des Antilles.

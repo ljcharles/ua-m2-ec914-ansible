@@ -8,5 +8,5 @@
 
 - include: install-backports-repo.yml
 
-#- include: update-cache.yml
+- include: update-cache.yml
 

@@ -1,0 +1,20 @@
+---
+- name: 1. Créer un dossier pour docker
+  file:
+    path: /etc/docker32
+    state: directory
+    mode: 0755
+
+- name: 2.Installer des packages pour récupérer le repo
+  apt:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ paquets_repo }}"
+
+- name: 3. Cloner le repo pour docker-ce 32 bits
+  git:
+    repo: 'https://github.com/docker-32bit/{{ ansible_distribution|lower }}.git'
+    dest: /etc/docker32
+
+- name: 4. Installation docker
+  shell: /etc/docker32/build-image.sh

@@ -4,4 +4,3 @@
   roles:
     - role: installation-dotdeb-backport
     - role: installation-docker
-

@@ -4,6 +4,10 @@ paquets_communs:
    - ca-certificates
    - curl
 
+paquets_repo:
+   - docker.io
+   - git
+
 pc_architecture: "{{ lookup('pipe', 'dpkg --print-architecture') }}"
 
 docker_sources:

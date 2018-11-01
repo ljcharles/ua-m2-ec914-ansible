@@ -1,0 +1,7 @@
+---
+paquets_jessie_or_newers:
+  - gnupg2
+  - software-properties-common
+
+paquets_wheezy_or_olders:
+  - python-software-properties

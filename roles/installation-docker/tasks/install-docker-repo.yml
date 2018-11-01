@@ -1,0 +1,9 @@
+---
+
+- name: 2.Installer Docker repo pour Debian et/ou Ubuntu.
+
+  apt_repository: repo="{{ item }}"
+
+  with_items: "{{ docker_sources }}"
+
+  register: docker_apt_repo_result

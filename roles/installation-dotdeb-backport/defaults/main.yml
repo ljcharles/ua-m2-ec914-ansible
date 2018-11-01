@@ -1,6 +1,9 @@
 ---
 # defaults file for installation-dotdeb-backport
 
+var_yes: "yes"
+var_no : "no"
+
 dotdeb_sources_Debian:
 
   - "deb http://packages.dotdeb.org {{ ansible_distribution_release }} all"

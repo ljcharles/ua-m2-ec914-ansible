@@ -1,0 +1,18 @@
+---
+
+- include: install-packages-for-apt-https-repo.yml
+
+- include_vars: "{{ ansible_distribution }}.yml"
+
+- include: "install-packages-for-{{ ansible_distribution }}.yml"
+
+- include: add-docker-key.yml
+
+- include: install-docker-repo.yml
+
+- include: update-cache.yml
+
+- include: install-docker.yml
+
+- debug: msg="{{ lookup('pipe','docker version') }}"
+

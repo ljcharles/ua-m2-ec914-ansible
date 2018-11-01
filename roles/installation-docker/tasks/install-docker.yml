@@ -1,0 +1,9 @@
+---
+- name: 6.Installation Docker pour Debian et/ou Ubuntu.
+
+  apt:
+
+    name: docker-ce
+
+    state: latest
+

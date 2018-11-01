@@ -1,0 +1,7 @@
+---
+- name: 2.Installer les paquets spécifiques pour autoriser les repos HTTPS.
+  apt:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ paquets_wheezy_or_olders if ansible_distribution_version <= 7 else paquets_jessie_or_newers }}"
+

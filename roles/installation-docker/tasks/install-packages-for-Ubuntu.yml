@@ -1,0 +1,8 @@
+---
+
+- name: 2.Installer les paquets spécifiques pour autoriser les repos HTTPS.
+  apt:
+    name: "{{ item }}"
+    state: latest
+  with_items: "{{ paquets_ubuntu }}"
+

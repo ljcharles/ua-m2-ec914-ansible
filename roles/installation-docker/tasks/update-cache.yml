@@ -4,4 +4,4 @@
   apt: 
     update_cache: yes
     cache_valid_time: 3600
-  when: dotdeb_apt_repo_result.changed or dotdeb_apt_key_result.changed or backports_apt_repo_result.changed
+  when: docker_apt_repo_result.changed or docker_apt_key_result.changed

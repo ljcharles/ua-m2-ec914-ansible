@@ -1,0 +1,7 @@
+---
+
+- name: 3.Importer Docker GPG key.
+
+  apt_key: url="{{ docker_repo_gpg_key_url }}"
+
+  register: docker_apt_key_result

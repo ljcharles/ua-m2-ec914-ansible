@@ -1,6 +1,6 @@
 # ua-m2-ec914-ansible
 
-##Installation dotdeb backport et Docker
+## Installation dotdeb backport et Docker
 =========
 
 Ajoute les dépots dotdeb et backports via Ansible pour Ubuntu et/ou Debian. Et installe Docker pour Ubuntu et Debian version 32 et 64bits.
@@ -8,7 +8,7 @@ Ajoute les dépots dotdeb et backports via Ansible pour Ubuntu et/ou Debian. Et 
 Role Variables
 --------------
 
-###Pour  installation-dotdeb-backport :
+### Pour  installation-dotdeb-backport :
 
 Dans defaults/main.yml :
 - dotdeb_sources_Debian: sources du repo pour dotdeb Debian
@@ -24,7 +24,7 @@ Dans vars/Debian.yml :
 - backports_sources: source du repo pour backports Debian
 
 
-###Pour  installation-docker:
+### Pour  installation-docker:
 
 Dans defaults/main.yml :
 - paquets_communs: paquets à installer en communs des architectures pour docker
